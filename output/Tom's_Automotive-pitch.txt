@@ -1,16 +1,16 @@
-Subject: Tupelo Dental Group — Your Website Is Costing You Patients
+Subject: Tom's Automotive — Your Website Is Costing You Patients
 
 Hi there,
 
-I was searching for a Dentist in Tupelo, MS and found Tupelo Dental Group. First impression? Your services look great — but your website doesn't show it.
+I was searching for a Auto Repair in Tupelo, MS and found Tom's Automotive. First impression? Your services look great — but your website doesn't show it.
 
-I ran a quick analysis of https://tupelodentalgroup.com and found some issues that are likely costing you new patients:
+I ran a quick analysis of https://www.toms-automotive.com and found some issues that are likely costing you new patients:
 
-  • ✗ 117 fixed-width elements — likely overflows on mobile (-5)
-  • ✗ 108 small touch targets — hard to tap on mobile (-5)
-  • ✗ No meta description — missing search snippet (-5)
-  • ✗ No H1 tag — missing main heading (-4)
-  • ✗ Only 0/34 images have alt text — accessibility + SEO issue (-5)
+  • ✗ 10 fixed-width elements — likely overflows on mobile (-5)
+  • ✗ 13 small touch targets — hard to tap on mobile (-5)
+  • ✗ No clear CTAs found — visitors won't know what to do (-5)
+  • ✗ Only 1/6 images have alt text — accessibility + SEO issue (-5)
+  • ✗ No ARIA attributes — screen reader unfriendly (-5)
 
 These aren't just cosmetic problems. They directly impact how many people:
 - Find you on Google (SEO)
@@ -20,8 +20,8 @@ These aren't just cosmetic problems. They directly impact how many people:
 I'm [Your Name] from PaperLab Studio. I build modern, fast, mobile-first websites for local businesses like yours. Here's what I'd fix:
 
   • Rebuild mobile experience — currently 50/100
-  • Fix SEO fundamentals — currently 30/100
-  • Speed optimization — currently 25/100
+  • Fix SEO fundamentals — currently 55/100
+  • Speed optimization — currently 40/100
 
 **What this gets you:**
 - More phone calls from new patients finding you on Google
@@ -29,7 +29,7 @@ I'm [Your Name] from PaperLab Studio. I build modern, fast, mobile-first website
 - Faster loading = lower bounce rates
 - A professional first impression that matches the quality of your work
 
-I put together a quick mockup showing what a redesigned Tupelo Dental Group site could look like. Want to see it?
+I put together a quick mockup showing what a redesigned Tom's Automotive site could look like. Want to see it?
 
 Happy to hop on a 15-minute call to walk through it. No pressure — if it's not a fit, no hard feelings.
 

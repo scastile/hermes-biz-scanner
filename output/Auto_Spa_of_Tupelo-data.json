@@ -1,0 +1,60 @@
+{
+  "total_score": 58,
+  "total_max": 100,
+  "percentage": 58.0,
+  "grade": "D",
+  "emoji": "\ud83d\udd34",
+  "categories": {
+    "Mobile Responsiveness": {
+      "score": 10,
+      "max": 20,
+      "details": [
+        "\u2713 Viewport meta tag present (+5)",
+        "\u2713 22 media queries found (+5)",
+        "\u2717 223 fixed-width elements \u2014 likely overflows on mobile (-5)",
+        "\u2717 168 small touch targets \u2014 hard to tap on mobile (-5)"
+      ]
+    },
+    "Design Quality": {
+      "score": 15,
+      "max": 20,
+      "details": [
+        "\u2713 Color contrast appears adequate (+5)",
+        "\u2717 25 font families \u2014 typographic chaos (-5)",
+        "\u2713 32 CTAs detected \u2014 good call-to-action presence (+5)",
+        "\u2713 256 spacing declarations \u2014 good whitespace (+5)"
+      ]
+    },
+    "SEO": {
+      "score": 10,
+      "max": 20,
+      "details": [
+        "~ Title tag poor length (81 chars) (+1)",
+        "~ Meta description too short/long (374 chars) (+1)",
+        "\u2713 Exactly 1 H1 tag \u2014 proper hierarchy (+5)",
+        "~ 13/22 images have alt text (+3)"
+      ]
+    },
+    "Accessibility": {
+      "score": 18,
+      "max": 20,
+      "details": [
+        "\u2713 23 semantic elements \u2014 good HTML structure (+5)",
+        "\u2713 73 ARIA attributes \u2014 good accessibility markup (+5)",
+        "~ 1/2 inputs labeled (+3)",
+        "\u2713 All 14 links have valid hrefs (+5)"
+      ]
+    },
+    "Performance": {
+      "score": 5,
+      "max": 20,
+      "details": [
+        "\u2713 Page size 984KB \u2014 fast loading (+5)",
+        "\u2717 22 scripts, 0 stylesheets \u2014 too many blocking resources (-5)",
+        "\u2717 ~45 estimated requests \u2014 too many (-5)",
+        "\u2717 No modern image formats \u2014 all JPEG/PNG (-5)"
+      ]
+    }
+  },
+  "prospect_priority": "HIGH"
+}

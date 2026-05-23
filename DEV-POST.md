@@ -25,7 +25,7 @@ The whole pipeline runs autonomously. Give it a city and industry, and it comes 
 
 ## Demo: Tupelo, MS
 
-I ran it against local businesses in Tupelo, MS. Here's what it found:
+I ran it against local businesses across different industries in Tupelo, MS. Here's what it found:
 
 ### 🔴 Blue Canoe — Grade: D (57%)
 
@@ -39,7 +39,27 @@ Tupelo's beloved dive bar with live music and 100+ beers. Great vibe, rough webs
 - 58 scripts and 66 total requests killing performance
 - Zero modern image formats (all JPEG/PNG)
 
-The agent generated a full pitch report with screenshots and a ready-to-send email that opens with: *"I was searching for restaurants in Tupelo and found Blue Canoe. The food and music scene looks incredible — but your website doesn't show it."*
+### 🔴 Tom's Automotive — Grade: D (59%)
+
+Family-owned auto repair shop. Clean 49KB site, but no clear calls-to-action — visitors won't know what to do.
+
+**Issues found:**
+- 10 fixed-width elements breaking mobile
+- 13 touch targets too small for mobile
+- No clear CTAs — no "Book Now", no "Get a Quote" buttons
+- Only 1 of 6 images has alt text
+- 11 scripts and 5 stylesheets blocking render
+
+### 🔴 Auto Spa of Tupelo — Grade: D (58%)
+
+Auto body and painting shop. Massive 984KB page with 25 font families — typographic chaos.
+
+**Issues found:**
+- 223 fixed-width elements — mobile is completely broken
+- 168 touch targets too small to tap
+- 25 font families — no consistent visual identity
+- 22 scripts, no external stylesheets (all inline)
+- Only 13 of 22 images have alt text
 
 ### 🟠 Woody's Tupelo Steakhouse — Grade: C (61%)
 
@@ -53,6 +73,10 @@ A Tupelo institution for 30 years. Charcoal-grilled steaks, southern hospitality
 - Only 2 of 12 images have alt text
 - Zero semantic HTML elements — it's all divs
 
+### The Pattern
+
+Every single one of these businesses has real problems that cost them customers. The scanner found them in seconds. A human would need 15-20 minutes per site to catch the same issues.
+
 ## How It Works: The Hermes Agentic Pipeline
 
 This is where it gets interesting. The scanner doesn't just run a script — it uses Hermes Agent's full agentic capabilities:
@@ -60,7 +84,7 @@ This is where it gets interesting. The scanner doesn't just run a script — it 
 ### Step 1: Discovery (`web_search` + `web_extract`)
 
 ```
-"Find dentists in Corinth, MS with websites"
+"Find auto repair shops in Tupelo, MS with websites"
 ```
 
 Hermes searches, extracts business names, URLs, phone numbers, and reviews. It builds a candidate list automatically.
@@ -93,7 +117,7 @@ For each business, Hermes generates:
 
 ### Step 5: Prioritization
 
-Prospects are ranked worst-first. A dental office scoring 57% (Grade D) with 31 blocking scripts and no mobile support is a better lead than a Ford dealer scoring 60% (Grade C) who at least has media queries.
+Prospects are ranked worst-first. A bar scoring 57% (Grade D) with 58 blocking scripts and no meta description is a better lead than a steakhouse scoring 61% (Grade C) who at least has a viewport tag.
 
 ## The Code
 
@@ -111,7 +135,7 @@ scorer/
 
 The Hermes skill (`~/.hermes/skills/biz-web-scanner/SKILL.md`) teaches the agent the full workflow — from discovery to pitch. Once loaded, you just say:
 
-> "Scan dentists in Corinth, MS and generate pitch reports"
+> "Scan auto repair shops in Tupelo, MS and generate pitch reports"
 
 ...and Hermes handles the rest.
 
@@ -133,7 +157,7 @@ Every other submission is building RAG pipelines and chat interfaces. I built a 
 
 **4. Local business prospecting is a goldmine**
 
-There are millions of small businesses with terrible websites. Most can't tell good design from bad. If you can show them specific, measurable problems (31 blocking scripts! 15 unlabeled form inputs!), they get it immediately.
+There are millions of small businesses with terrible websites. Most can't tell good design from bad. If you can show them specific, measurable problems (223 fixed-width elements! 25 font families! 58 blocking scripts!), they get it immediately.
 
 ## Try It Yourself
 
@@ -151,7 +175,7 @@ open output/Example_Business-report.html
 
 Or if you have Hermes Agent installed, just load the skill and say:
 
-> "Scan 5 restaurants in Tupelo, MS and rank them by website quality"
+> "Scan 5 businesses in my area and rank them by website quality"
 
 The agent will discover, score, and generate pitch reports automatically.
 
