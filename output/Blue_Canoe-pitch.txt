@@ -1,0 +1,42 @@
+Subject: Blue Canoe — Your Website Is Costing You Patients
+
+Hi there,
+
+I was searching for a Restaurant in Tupelo, MS and found Blue Canoe. First impression? Your services look great — but your website doesn't show it.
+
+I ran a quick analysis of https://www.bluecanoebar.com and found some issues that are likely costing you new patients:
+
+  • ✗ 8 fixed-width elements — likely overflows on mobile (-5)
+  • ✗ 8 small touch targets — hard to tap on mobile (-5)
+  • ✗ No meta description — missing search snippet (-5)
+  • ✗ No H1 tag — missing main heading (-4)
+  • ✗ 4 empty links — poor navigation (-5)
+
+These aren't just cosmetic problems. They directly impact how many people:
+- Find you on Google (SEO)
+- Stay on your site instead of bouncing (mobile experience)
+- Trust you enough to book an appointment (design quality)
+
+I'm [Your Name] from PaperLab Studio. I build modern, fast, mobile-first websites for local businesses like yours. Here's what I'd fix:
+
+  • Rebuild mobile experience — currently 50/100
+  • Fix SEO fundamentals — currently 35/100
+  • Speed optimization — currently 25/100
+
+**What this gets you:**
+- More phone calls from new patients finding you on Google
+- A site that looks great on phones (where 60%+ of your visitors are)
+- Faster loading = lower bounce rates
+- A professional first impression that matches the quality of your work
+
+I put together a quick mockup showing what a redesigned Blue Canoe site could look like. Want to see it?
+
+Happy to hop on a 15-minute call to walk through it. No pressure — if it's not a fit, no hard feelings.
+
+Best,
+[Your Name]
+PaperLab Studio
+[your email]
+[your phone]
+
+P.S. — Your competitors' websites are looking pretty sharp these days. Time to level up.

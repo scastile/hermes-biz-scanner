@@ -1,0 +1,60 @@
+{
+  "total_score": 57,
+  "total_max": 100,
+  "percentage": 57.0,
+  "grade": "D",
+  "emoji": "\ud83d\udd34",
+  "categories": {
+    "Mobile Responsiveness": {
+      "score": 10,
+      "max": 20,
+      "details": [
+        "\u2713 Viewport meta tag present (+5)",
+        "\u2713 3 media queries found (+5)",
+        "\u2717 8 fixed-width elements \u2014 likely overflows on mobile (-5)",
+        "\u2717 8 small touch targets \u2014 hard to tap on mobile (-5)"
+      ]
+    },
+    "Design Quality": {
+      "score": 20,
+      "max": 20,
+      "details": [
+        "\u2713 Color contrast appears adequate (+5)",
+        "\u2713 3 font families \u2014 consistent typography (+5)",
+        "\u2713 9 CTAs detected \u2014 good call-to-action presence (+5)",
+        "\u2713 22 spacing declarations \u2014 good whitespace (+5)"
+      ]
+    },
+    "SEO": {
+      "score": 7,
+      "max": 20,
+      "details": [
+        "~ Title tag acceptable (23 chars): \"Blue Canoe | Tupelo, MS\" (+3)",
+        "\u2717 No meta description \u2014 missing search snippet (-5)",
+        "\u2717 No H1 tag \u2014 missing main heading (-4)",
+        "~ 3/4 images have alt text (+3)"
+      ]
+    },
+    "Accessibility": {
+      "score": 15,
+      "max": 20,
+      "details": [
+        "\u2713 10 semantic elements \u2014 good HTML structure (+5)",
+        "\u2713 10 ARIA attributes \u2014 good accessibility markup (+5)",
+        "\u2713 All 2 form inputs have labels (+5)",
+        "\u2717 4 empty links \u2014 poor navigation (-5)"
+      ]
+    },
+    "Performance": {
+      "score": 5,
+      "max": 20,
+      "details": [
+        "\u2713 Page size 68KB \u2014 fast loading (+5)",
+        "\u2717 58 scripts, 2 stylesheets \u2014 too many blocking resources (-5)",
+        "\u2717 ~66 estimated requests \u2014 too many (-5)",
+        "\u2717 No modern image formats \u2014 all JPEG/PNG (-5)"
+      ]
+    }
+  },
+  "prospect_priority": "HIGH"
+}

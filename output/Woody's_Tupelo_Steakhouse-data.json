@@ -1,0 +1,60 @@
+{
+  "total_score": 61,
+  "total_max": 100,
+  "percentage": 61.0,
+  "grade": "C",
+  "emoji": "\ud83d\udfe0",
+  "categories": {
+    "Mobile Responsiveness": {
+      "score": 10,
+      "max": 20,
+      "details": [
+        "\u2713 Viewport meta tag present (+5)",
+        "\u2713 74 media queries found (+5)",
+        "\u2717 122 fixed-width elements \u2014 likely overflows on mobile (-5)",
+        "\u2717 110 small touch targets \u2014 hard to tap on mobile (-5)"
+      ]
+    },
+    "Design Quality": {
+      "score": 15,
+      "max": 20,
+      "details": [
+        "\u2713 Color contrast appears adequate (+5)",
+        "\u2717 8 font families \u2014 typographic chaos (-5)",
+        "\u2713 160 CTAs detected \u2014 good call-to-action presence (+5)",
+        "\u2713 104 spacing declarations \u2014 good whitespace (+5)"
+      ]
+    },
+    "SEO": {
+      "score": 8,
+      "max": 20,
+      "details": [
+        "~ Title tag acceptable (18 chars): \"Woody's Steakhouse\" (+3)",
+        "~ Meta description acceptable (100 chars) (+3)",
+        "~ 4 H1 tags \u2014 should only have one (+2)",
+        "\u2717 Only 2/12 images have alt text \u2014 accessibility + SEO issue (-5)"
+      ]
+    },
+    "Accessibility": {
+      "score": 13,
+      "max": 20,
+      "details": [
+        "\u2717 Only 0 semantic elements \u2014 div soup (-5)",
+        "\u2713 17 ARIA attributes \u2014 good accessibility markup (+5)",
+        "\u2713 No form inputs to check (+5)",
+        "~ 1 empty/placeholder links (+3)"
+      ]
+    },
+    "Performance": {
+      "score": 15,
+      "max": 20,
+      "details": [
+        "\u2713 Page size 250KB \u2014 fast loading (+5)",
+        "\u2713 3 scripts, 2 stylesheets \u2014 minimal blocking (+5)",
+        "\u2713 ~17 estimated requests \u2014 efficient (+5)",
+        "\u2717 No modern image formats \u2014 all JPEG/PNG (-5)"
+      ]
+    }
+  },
+  "prospect_priority": "MEDIUM"
+}
