@@ -1,11 +1,11 @@
 ---
-title: "I Built an AI That Finds Bad Local Business Websites (And Pitches Them Redesigns)"
+title: "I Built an AI Tool That Finds Bad Local Business Websites (And Pitches Them Redesigns)"
 published: false
 description: "How I used Hermes Agent to build an autonomous web quality scanner that prospects, scores, and generates pitch reports for local businesses — replacing hours of manual work with a single command."
 tags: hermesagentchallenge, devchallenge, agents, python, webdev
 ---
 
-# I Built an AI That Finds Bad Local Business Websites (And Pitches Them Redesigns)
+# I Built an AI Tool That Finds Bad Local Business Websites (And Pitches Them Redesigns)
 
 Your favorite dive bar's website loads 58 JavaScript files before showing a single image. The local steakhouse has 122 elements that break on mobile. The auto body shop uses 25 different font families on one page.
 
@@ -24,8 +24,8 @@ So I taught my AI agent to do it.
 1. **Discovers** local businesses via web search
 2. **Scores** their websites across 5 categories (mobile, design, SEO, accessibility, performance)
 3. **Ranks** them worst-first (best prospects at the top)
-4. **Generates** visual pitch reports with specific issues
-5. **Writes** personalized pitch email drafts
+4. **Generates** visual pitch reports with specific issues highlighted
+5. **Writes** personalized pitch email drafts ready to send
 
 One command. Full prospecting pipeline. Done.
 
@@ -61,9 +61,13 @@ These aren't unusual. This is what local business websites look like everywhere.
 
 Here's what makes this different from a script. The scanner uses Hermes's `delegate_task` to spawn **parallel subagents** — each one independently scoring a different business:
 
-**Main agent:** Discovers businesses via `web_search`, spawns subagents, aggregates results.
+**Main agent** — Discovers businesses via `web_search`, spawns subagents, aggregates results.
 
-**Subagents (N concurrent):** Each subagent handles one business — fetching the site via `web_extract`, screenshotting via `browser`, scoring via `execute_code`, and generating reports via `write_file`.
+**Subagents (N concurrent)** — Each subagent handles one business:
+- Fetches the site via `web_extract`
+- Screenshots via `browser`
+- Scores via `execute_code`
+- Generates reports via `write_file`
 
 This isn't just parallelism for speed (though it's ~3-4x faster than sequential scoring). It's **isolation** — if one subagent hits a 403 or timeout, the others keep working. Each subagent has its own context window, so scanning 10 businesses doesn't blow up memory.
 
@@ -130,4 +134,4 @@ Or with Hermes Agent:
 
 ---
 
-*Submission for the [Hermes Agent Challenge](https://dev.to/challenges/hermes-agent-2026-05-15). If you run a local business and want a free website audit, drop your URL in the comments.*
+*This is a submission for the [Hermes Agent Challenge](https://dev.to/challenges/hermes-agent-2026-05-15). If you found this useful, I'd appreciate a reaction — and if you know a business with a terrible website, send them my way.*
