@@ -7,9 +7,9 @@ tags: hermesagentchallenge, devchallenge, agents, python, webdev
 
 # I Built an AI That Finds Bad Local Business Websites (And Pitches Them Redesigns)
 
-Your dentist's website loads 58 JavaScript files before showing a single image. The local steakhouse has 122 elements that break on mobile. The auto body shop uses 25 different font families on one page.
+Your favorite dive bar's website loads 58 JavaScript files before showing a single image. The local steakhouse has 122 elements that break on mobile. The auto body shop uses 25 different font families on one page.
 
-I know this because I built an AI agent that finds these problems automatically — and then writes the pitch email to fix them.
+I know this because I built an AI agent that finds these problems automatically — and then writes the pitch email selling the fix.
 
 ## The Problem
 
@@ -19,7 +19,7 @@ So I taught my AI agent to do it.
 
 ## What I Built
 
-**Hermes Local Business Web Scanner** — a tool built on [Hermes Agent](https://hermes-agent.nousresearch.com/) that takes a city and industry, then autonomously:
+**Hermes Local Business Web Scanner** — a tool built on [Hermes Agent](https://hermes-agent.nousresearch.com/), that takes a city and industry, then autonomously:
 
 1. **Discovers** local businesses via web search
 2. **Scores** their websites across 5 categories (mobile, design, SEO, accessibility, performance)
@@ -95,7 +95,7 @@ scorer/
 └── aggregate.py      # Combines scores, assigns grades
 ```
 
-The [Hermes skill](~/.hermes/skills/biz-web-scanner/SKILL.md) teaches the agent the full workflow. Once loaded:
+The [Hermes skill](https://github.com/scastile/hermes-biz-scanner/blob/main/SKILL.md) teaches the agent the full workflow. Once loaded:
 
 > "Scan auto repair shops in Tupelo, MS and generate pitch reports"
 
