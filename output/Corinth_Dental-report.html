@@ -1,0 +1,165 @@
+PITCH_REPORT_TEMPLATE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pitch Report — Corinth Dental</title>
+<style>
+  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; color: #1a1a1a; background: #f8fafc; }}
+  .header {{ background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; padding: 30px; border-radius: 12px; margin-bottom: 20px; }}
+  .score-card {{ background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }}
+  .score-big {{ font-size: 48px; font-weight: 700; }}
+  .grade {{ font-size: 64px; }}
+  table {{ width: 100%; border-collapse: collapse; margin: 16px 0; }}
+  th, td {{ padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }}
+  th {{ background: #f1f5f9; font-weight: 600; }}
+  .issues {{ background: #fef2f2; border-left: 4px solid #ef4444; padding: 16px; border-radius: 0 8px 8px 0; }}
+  .strengths {{ background: #f0fdf4; border-left: 4px solid #22c55e; padding: 16px; border-radius: 0 8px 8px 0; }}
+  .priority-high {{ color: #ef4444; font-weight: 700; }}
+  .priority-medium {{ color: #f59e0b; font-weight: 700; }}
+  .priority-low {{ color: #22c55e; font-weight: 700; }}
+  h1, h2, h3 {{ margin-top: 0; }}
+  a {{ color: #6366f1; }}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🔴 Corinth Dental</h1>
+  <p><a href="https://www.corinthdental.com" style="color:#c7d2fe;">https://www.corinthdental.com</a> · Corinth, MS · Dentist</p>
+  <p>Generated: 2026-05-23 21:05</p>
+</div>
+
+<div class="score-card">
+  <div style="display:flex;align-items:center;gap:24px;">
+    <div>
+      <div class="grade">🔴</div>
+      <div>Grade: <strong>D</strong></div>
+    </div>
+    <div>
+      <div class="score-big">57<span style="font-size:24px;color:#94a3b8;">/100</span></div>
+      <div style="color:#64748b;">57.0%</div>
+    </div>
+    <div>
+      <div>Prospect Priority</div>
+      <div class="priority-priority-high">HIGH</div>
+    </div>
+  </div>
+</div>
+
+<div class="score-card">
+  <h2>📊 Score Breakdown</h2>
+  <table>
+    <tr><th>Category</th><th>Score</th><th>Progress</th><th>Details</th></tr>
+    
+        <tr>
+          <td><strong>Mobile Responsiveness</strong></td>
+          <td>10/20</td>
+          <td>
+            <div style="background:#e5e7eb;border-radius:4px;height:20px;width:100%;">
+              <div style="background:#f59e0b;border-radius:4px;height:20px;width:50%;"></div>
+            </div>
+            <small>50%</small>
+          </td>
+          <td style="font-size:0.85em;">✓ Viewport meta tag present (+5)<br>✗ No media queries — no responsive CSS rules (-5)<br>✗ 5 fixed-width elements — likely overflows on mobile (-5)<br>✓ Touch targets appear adequately sized (+5)</td>
+        </tr>
+
+        <tr>
+          <td><strong>Design Quality</strong></td>
+          <td>14/20</td>
+          <td>
+            <div style="background:#e5e7eb;border-radius:4px;height:20px;width:100%;">
+              <div style="background:#f59e0b;border-radius:4px;height:20px;width:70%;"></div>
+            </div>
+            <small>70%</small>
+          </td>
+          <td style="font-size:0.85em;">✓ Color contrast appears adequate (+5)<br>~ 0 font families — somewhat inconsistent (+3)<br>✓ 11 CTAs detected — good call-to-action presence (+5)<br>~ Only 7 spacing declarations — cramped layout (+1)</td>
+        </tr>
+
+        <tr>
+          <td><strong>SEO</strong></td>
+          <td>15/20</td>
+          <td>
+            <div style="background:#e5e7eb;border-radius:4px;height:20px;width:100%;">
+              <div style="background:#15be53;border-radius:4px;height:20px;width:75%;"></div>
+            </div>
+            <small>75%</small>
+          </td>
+          <td style="font-size:0.85em;">✓ Title tag optimal length (60 chars): "Dentist in Corinth, MS | Cosmetic Dentistry | Cori" (+5)<br>✓ Meta description optimal (143 chars) (+5)<br>✓ Exactly 1 H1 tag — proper hierarchy (+5)<br>✗ Only 1/6 images have alt text — accessibility + SEO issue (-5)</td>
+        </tr>
+
+        <tr>
+          <td><strong>Accessibility</strong></td>
+          <td>10/20</td>
+          <td>
+            <div style="background:#e5e7eb;border-radius:4px;height:20px;width:100%;">
+              <div style="background:#f59e0b;border-radius:4px;height:20px;width:50%;"></div>
+            </div>
+            <small>50%</small>
+          </td>
+          <td style="font-size:0.85em;">✓ 9 semantic elements — good HTML structure (+5)<br>✓ 11 ARIA attributes — good accessibility markup (+5)<br>✗ 15/15 inputs missing labels — screen reader issue (-5)<br>✗ 9 empty links — poor navigation (-5)</td>
+        </tr>
+
+        <tr>
+          <td><strong>Performance</strong></td>
+          <td>8/20</td>
+          <td>
+            <div style="background:#e5e7eb;border-radius:4px;height:20px;width:100%;">
+              <div style="background:#ef4444;border-radius:4px;height:20px;width:40%;"></div>
+            </div>
+            <small>40%</small>
+          </td>
+          <td style="font-size:0.85em;">✓ Page size 62KB — fast loading (+5)<br>✗ 31 scripts, 1 stylesheets — too many blocking resources (-5)<br>~ ~38 estimated requests — acceptable (+3)<br>✗ No modern image formats — all JPEG/PNG (-5)</td>
+        </tr>
+  </table>
+</div>
+
+
+
+<div class="score-card">
+  <h2>🚨 Critical Issues</h2>
+  <div class="issues">
+    <ul><li><strong>Mobile Responsiveness:</strong> No media queries — no responsive CSS rules (-5)</li>
+<li><strong>Mobile Responsiveness:</strong> 5 fixed-width elements — likely overflows on mobile (-5)</li>
+<li><strong>SEO:</strong> Only 1/6 images have alt text — accessibility + SEO issue (-5)</li>
+<li><strong>Accessibility:</strong> 15/15 inputs missing labels — screen reader issue (-5)</li>
+<li><strong>Accessibility:</strong> 9 empty links — poor navigation (-5)</li>
+<li><strong>Performance:</strong> 31 scripts, 1 stylesheets — too many blocking resources (-5)</li>
+<li><strong>Performance:</strong> No modern image formats — all JPEG/PNG (-5)</li></ul>
+  </div>
+</div>
+
+<div class="score-card">
+  <h2>✅ Strengths</h2>
+  <div class="strengths">
+    <ul><li><strong>Mobile Responsiveness:</strong> Viewport meta tag present (+5)</li>
+<li><strong>Mobile Responsiveness:</strong> Touch targets appear adequately sized (+5)</li>
+<li><strong>Design Quality:</strong> Color contrast appears adequate (+5)</li>
+<li><strong>Design Quality:</strong> 11 CTAs detected — good call-to-action presence (+5)</li>
+<li><strong>SEO:</strong> Title tag optimal length (60 chars): "Dentist in Corinth, MS | Cosmetic Dentistry | Cori" (+5)</li>
+<li><strong>SEO:</strong> Meta description optimal (143 chars) (+5)</li>
+<li><strong>SEO:</strong> Exactly 1 H1 tag — proper hierarchy (+5)</li>
+<li><strong>Accessibility:</strong> 9 semantic elements — good HTML structure (+5)</li>
+<li><strong>Accessibility:</strong> 11 ARIA attributes — good accessibility markup (+5)</li>
+<li><strong>Performance:</strong> Page size 62KB — fast loading (+5)</li></ul>
+  </div>
+</div>
+
+<div class="score-card">
+  <h2>💡 What a Redesign Would Fix</h2>
+  <ul>
+    <li>Modern, mobile-first responsive design</li>
+    <li>Improved SEO visibility for local searches</li>
+    <li>Faster page load times</li>
+    <li>Professional visual identity that builds trust</li>
+    <li>Clear calls-to-action that convert visitors to customers</li>
+    <li>Accessibility compliance (ADA/WCAG)</li>
+  </ul>
+</div>
+
+<div style="text-align:center;color:#94a3b8;font-size:0.85em;padding:20px;">
+  Generated by Hermes Local Business Web Scanner · PaperLab Studio
+</div>
+
+</body>
+</html>"""

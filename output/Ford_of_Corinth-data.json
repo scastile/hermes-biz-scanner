@@ -1,0 +1,60 @@
+{
+  "total_score": 60,
+  "total_max": 100,
+  "percentage": 60.0,
+  "grade": "C",
+  "emoji": "\ud83d\udfe0",
+  "categories": {
+    "Mobile Responsiveness": {
+      "score": 5,
+      "max": 20,
+      "details": [
+        "\u2717 No viewport meta tag \u2014 site won't scale on mobile (-5)",
+        "\u2713 17 media queries found (+5)",
+        "\u2717 35 fixed-width elements \u2014 likely overflows on mobile (-5)",
+        "\u2717 50 small touch targets \u2014 hard to tap on mobile (-5)"
+      ]
+    },
+    "Design Quality": {
+      "score": 20,
+      "max": 20,
+      "details": [
+        "\u2713 Color contrast appears adequate (+5)",
+        "\u2713 2 font families \u2014 consistent typography (+5)",
+        "\u2713 74 CTAs detected \u2014 good call-to-action presence (+5)",
+        "\u2713 61 spacing declarations \u2014 good whitespace (+5)"
+      ]
+    },
+    "SEO": {
+      "score": 15,
+      "max": 20,
+      "details": [
+        "\u2713 Title tag optimal length (59 chars): \"Ford of Corinth | Local Ford Sales & Service in Co\" (+5)",
+        "\u2713 Meta description optimal (152 chars) (+5)",
+        "~ 2 H1 tags \u2014 should only have one (+2)",
+        "~ 9/16 images have alt text (+3)"
+      ]
+    },
+    "Accessibility": {
+      "score": 15,
+      "max": 20,
+      "details": [
+        "\u2713 5 semantic elements \u2014 good HTML structure (+5)",
+        "\u2713 84 ARIA attributes \u2014 good accessibility markup (+5)",
+        "\u2713 No form inputs to check (+5)",
+        "\u2717 5 empty links \u2014 poor navigation (-5)"
+      ]
+    },
+    "Performance": {
+      "score": 5,
+      "max": 20,
+      "details": [
+        "\u2713 Page size 446KB \u2014 fast loading (+5)",
+        "\u2717 86 scripts, 5 stylesheets \u2014 too many blocking resources (-5)",
+        "\u2717 ~107 estimated requests \u2014 too many (-5)",
+        "\u2717 No modern image formats \u2014 all JPEG/PNG (-5)"
+      ]
+    }
+  },
+  "prospect_priority": "MEDIUM"
+}
